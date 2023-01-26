@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 220px;
+        }
+/* ［alt］ 有这个属性
+［alt＝＂北京故宫＂】精确匹配
+［alt＂abc＂］开头匹配 
+［alt ＄＝ ＂abc＂】 结尾匹配
+［alt＊＝＂abc＂］任意位置匹配
+［alt｜＝＂abc＂］ abc-开头
+［alt～＝＂abc＂］ abc为空格分开的独立部分
+*/ 
+img[alt|="参赛作品"]{
+    border: 3px solid deepskyblue;
+}
+    </style>
+</head>
+<body>
+    <img src="../素材/1.jpg" alt="参赛作品-鸟巢">
+    <img src="../素材/2.jpg" alt="北京十七空桥">
+    <img src="../素材/3.jpg" alt="参赛作品-北京天坛">
+    <img src="../素材/4.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box{
+font-size:30px;
+ line-height:1.5;
+ font-weight: bold;
+ font-family: '宋体'；
+ text-align：center;
+ /*text-decoration 文本修饰属性  
+  none 不做修饰
+  underline 下
+  overline上
+  */
+text-decoration:underline; 
+font-style: italic;
+color:dodgerblue;}
+.box ul {
+    /* ul 继承了.box的样式 */
+list-style: none; }
+.content{
+font-size:20px; text-align:left;
+text-decoration:overline; color: orchid;}
+    </style>
+</head>
+<body>
+    <div class="box">
+   <ul>
+    <li>列表项</li>
+    <li>列表项</li>
+    <li>列表项</li>
+   </ul>
+   <p class="content">字体属性继承性</p>
+    </div>
+</body>
+</html>
